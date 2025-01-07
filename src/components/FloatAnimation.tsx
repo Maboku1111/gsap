@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 const FloatAnimation = () => {
   useEffect(() => {
-    gsap.to("#float", {
+    gsap.to(".float", {
       duration: 1.5,
       y: 10, // Adjust this for the desired float height
       ease: "power1.inOut",

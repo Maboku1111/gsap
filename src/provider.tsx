@@ -1,6 +1,9 @@
+"use client";
+
 import type { NavigateOptions } from "react-router-dom";
 
 import { NextUIProvider } from "@nextui-org/system";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { useHref, useNavigate } from "react-router-dom";
 
 declare module "@react-types/shared" {
@@ -14,7 +17,9 @@ export function Provider({ children }: { children: React.ReactNode }) {
 
   return (
     <NextUIProvider navigate={navigate} useHref={useHref}>
-      {children}
+      <NextThemesProvider attribute="class" defaultTheme="dark">
+        {children}
+      </NextThemesProvider>
     </NextUIProvider>
   );
 }
