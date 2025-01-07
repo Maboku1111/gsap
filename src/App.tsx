@@ -1,21 +1,28 @@
-import { Route, Routes } from "react-router-dom";
+/* eslint-disable prettier/prettier */
+import {Link} from "@nextui-org/react";
 
-import IndexPage from "@/pages/index";
-import DocsPage from "@/pages/docs";
-import PricingPage from "@/pages/pricing";
-import BlogPage from "@/pages/blog";
-import AboutPage from "@/pages/about";
-
-function App() {
+export default function App() {
   return (
-    <Routes>
-      <Route element={<IndexPage />} path="/" />
-      <Route element={<DocsPage />} path="/docs" />
-      <Route element={<PricingPage />} path="/pricing" />
-      <Route element={<BlogPage />} path="/blog" />
-      <Route element={<AboutPage />} path="/about" />
-    </Routes>
+    <div className="flex gap-4">
+      <Link color="foreground" href="#">
+        Foreground
+      </Link>
+      <Link color="primary" href="#">
+        Primary
+      </Link>
+      <Link color="secondary" href="#">
+        Secondary
+      </Link>
+      <Link color="success" href="#">
+        Success
+      </Link>
+      <Link color="warning" href="#">
+        Warning
+      </Link>
+      <Link color="danger" href="#">
+        Danger
+      </Link>
+    </div>
   );
 }
 
-export default App;
