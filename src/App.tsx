@@ -1,9 +1,11 @@
 /* eslint-disable prettier/prettier */
 import { Link } from "@nextui-org/react";
+import FloatAnimation from "./components/floatAnimation";
 
 export default function App() {
   return (
     <div className="flex gap-4 items-center justify-center h-screen">
+      <FloatAnimation/>
       <Link color="foreground" href="#">
         Home
       </Link>
