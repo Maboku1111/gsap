@@ -4,7 +4,7 @@ import FloatAnimation from "./components/floatAnimation";
 
 export default function App() {
   return (
-    <div className="flex gap-4 items-center justify-center h-screen">
+    <div id="float" className="flex gap-4 items-center justify-center h-screen">
       <FloatAnimation/>
       <Link color="foreground" href="#">
         Home
