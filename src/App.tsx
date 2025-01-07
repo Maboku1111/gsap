@@ -1,28 +1,27 @@
 /* eslint-disable prettier/prettier */
-import {Link} from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 
 export default function App() {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 items-center justify-center h-screen">
       <Link color="foreground" href="#">
-        Foreground
+        Home
       </Link>
       <Link color="primary" href="#">
-        Primary
+        About Me
       </Link>
       <Link color="secondary" href="#">
-        Secondary
+        Services
       </Link>
       <Link color="success" href="#">
-        Success
+        Rates
       </Link>
       <Link color="warning" href="#">
-        Warning
+        Referrals
       </Link>
       <Link color="danger" href="#">
-        Danger
+        Contact Me
       </Link>
     </div>
   );
 }
-
